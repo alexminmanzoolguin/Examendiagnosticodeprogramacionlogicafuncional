@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="encriptar">
+  <ClassDiagramComponents>
+    <Class name="Encriptador" package="" visibility="public" xPosition="262.0" yPosition="81.0">
+      <Fields>
+        <Field name="parametro1" type="int" visibility="private"/>
+        <Field name="parametro2" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

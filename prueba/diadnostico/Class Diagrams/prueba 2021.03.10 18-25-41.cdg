@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="prueba">
+  <ClassDiagramComponents>
+    <Class name="AlgoritmoDiferencia" package="prueba" visibility="public" xPosition="49.0" yPosition="348.0">
+      <Fields>
+        <Field name="num" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="param"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="encriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param"/>
+        </Method>
+        <Method name="desencriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AlgoritmoMultiplicacion" package="prueba" visibility="public" xPosition="486.0" yPosition="360.0">
+      <Fields>
+        <Field name="num" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="param"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="encriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param"/>
+        </Method>
+        <Method name="desencriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AlgoritmoXOR" package="prueba" visibility="public" xPosition="706.0" yPosition="185.0">
+      <Fields>
+        <Field name="num" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="param"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="encriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param"/>
+        </Method>
+        <Method name="desencriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Encriptador" package="prueba" visibility="public" xPosition="451.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="encriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param1"/>
+          <Argument type="Algoritmo" name="param2"/>
+        </Method>
+        <Method name="desencriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param1"/>
+          <Argument type="Algoritmo" name="param2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Prueba" package="prueba" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Algoritmo" package="prueba" visibility="public" xPosition="72.0" yPosition="75.0">
+      <Methods>
+        <Method name="encriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param"/>
+        </Method>
+        <Method name="desencriptar" returnType="int" visibility="public">
+          <Argument type="int" name="param"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="prueba.Encriptador" target="prueba.Algoritmo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prueba.AlgoritmoDiferencia" target="prueba.Algoritmo"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prueba.AlgoritmoMultiplicacion" target="prueba.Algoritmo"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prueba.AlgoritmoXOR" target="prueba.Algoritmo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
